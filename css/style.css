@@ -103,6 +103,7 @@ img {
 
 #menu__burger {
     opacity: 0;
+    display: none;
 }
 
 #menu__burger:checked~.menu__btn>span {
@@ -150,8 +151,8 @@ img {
     visibility: hidden;
     top: 300px;
     width: 1212px;
+    list-style-type: none;
     margin: 0;
-    list-style: none;
     text-align: center;
     background-color: #0069E4;
     transition-duration: .10s;
@@ -160,17 +161,21 @@ img {
 .header__menu-item {
     display: block;
     padding: 39px 0;
-    font-size: 96px;
-    font-weight: 500;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    text-decoration: none;
     border-bottom: 1px solid #000;
     transition-duration: .10s;
 }
 
 .header__menu-item:hover {
     background-color: rgb(94, 204, 251);
+}
+
+.header__menu-link {
+    display: block;
+    font-size: 96px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .header__logo {
