@@ -123,6 +123,7 @@ img {
     display: flex;
     align-items: center;
     position: sticky;
+    position: -webkit-sticky;
     top: 28px;
     width: 60px;
     height: 60px;
@@ -198,7 +199,7 @@ img {
     font-size: 96px;
     letter-spacing: 17px;
     text-transform: uppercase;
-    align-self: flex-start;
+    align-self: self-end;
 }
 
 .header__title-one,
