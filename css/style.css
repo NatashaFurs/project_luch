@@ -59,7 +59,7 @@ img {
 }
 
 .container {
-    max-width: 1513px;
+    max-width: 1916px;
 }
 
 .header {
@@ -70,7 +70,6 @@ img {
     background-position: center;
     min-height: 100vh;
     color: #fff;
-    position: relative;
 }
 
 .header::after {
@@ -84,7 +83,7 @@ img {
 }
 
 .container__header {
-    max-width: 1920px;
+    max-width: 1916px;
     padding: 28px 40px 106px;
 }
 
@@ -94,6 +93,7 @@ img {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 90px;
+    position: relative;
 }
 
 .header__top-menu {
@@ -121,7 +121,7 @@ img {
 .menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 28px;
     width: 60px;
     height: 60px;
@@ -146,13 +146,11 @@ img {
 
 .header__top-menu-list {
     display: block;
-    position: fixed;
+    position: absolute;
     visibility: hidden;
-    top: 0;
+    top: 300px;
     width: 1212px;
-    height: 100%;
     margin: 0;
-    padding: 28px 0;
     list-style: none;
     text-align: center;
     background-color: #0069E4;
@@ -168,7 +166,6 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1px solid #000;
-    max-width: 1212px;
     transition-duration: .10s;
 }
 
