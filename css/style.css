@@ -73,7 +73,6 @@ img {
 }
 
 .container__header {
-    max-width: 1916px;
     padding: 28px 40px 106px;
 }
 
@@ -212,8 +211,30 @@ img {
     margin: 0 auto;
 }
 
-.main__graphic-one {
+.about__graphic-one {
     position: absolute;
     z-index: -1;
-    top: 700px;
+    top: 630px;
+}
+
+.about__top {
+    /* display: grid; */
+    padding-left: 195px;
+}
+
+.about__top-info {
+    display: flex;
+    flex-direction: column;
+    width: 575px;
+    margin-top: 215px;
+}
+
+.about__text {
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about__top-photo {
+    display: flex;
 }
