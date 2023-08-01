@@ -199,7 +199,7 @@ img {
     font-size: 96px;
     letter-spacing: 17px;
     text-transform: uppercase;
-    align-self: self-end;
+    align-self: flex-end;
 }
 
 .header__title-one,
