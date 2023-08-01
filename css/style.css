@@ -214,7 +214,7 @@ img {
 .about__graphic-one {
     position: absolute;
     z-index: -1;
-    top: 630px;
+    top: 600px;
 }
 
 .about__top {
@@ -226,7 +226,7 @@ img {
     display: flex;
     flex-direction: column;
     width: 575px;
-    margin-top: 215px;
+    margin-top: 250px;
 }
 
 .about__text {
