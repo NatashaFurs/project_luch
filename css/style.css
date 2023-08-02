@@ -218,13 +218,12 @@ img {
 }
 
 .about__top {
-    /* display: grid; */
-    padding-left: 195px;
+    padding: 140px 0 0 195px;
+    display: flex;
+    gap: 198px;
 }
 
 .about__top-info {
-    display: flex;
-    flex-direction: column;
     width: 575px;
     margin-top: 280px;
 }
@@ -235,6 +234,4 @@ img {
     text-transform: uppercase;
 }
 
-.about__top-photo {
-    display: flex;
-}
+.about__top-photo {}
