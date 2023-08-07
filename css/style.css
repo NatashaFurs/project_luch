@@ -224,7 +224,7 @@ img {
 .about__top {
     display: flex;
     padding: 147px 0 0 195px;
-    gap: 190px;
+    gap: 180px;
     margin-bottom: 80px;
 }
 
@@ -255,6 +255,15 @@ img {
     text-align: center;
     cursor: pointer;
 }
+
+.about__gallery-photo-one {
+    padding-right: 18px;
+}
+
+.about__gallery-arrow-left {
+    padding-right: 32px;
+}
+
 
 .about__content {
     display: grid;
