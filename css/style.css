@@ -225,6 +225,7 @@ img {
     display: flex;
     padding: 147px 0 0 195px;
     gap: 190px;
+    margin-bottom: 80px;
 }
 
 .about__top-info {
@@ -253,4 +254,53 @@ img {
     color: #fff;
     text-align: center;
     cursor: pointer;
+}
+
+
+
+.about__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+}
+
+.about__content-one {
+    display: flex;
+    flex-direction: column;
+    height: 1700px;
+    gap: 60px;
+}
+
+.about__content-two {
+    display: flex;
+    flex-direction: column;
+    height: 1700px;
+    gap: 60px;
+}
+
+.about__content-block {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 43px;
+    width: 736px;
+}
+
+.about__block-foto {
+    margin-bottom: 88px;
+}
+
+.about__block-title {
+    font-size: 96px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    padding-top: 44px;
+}
+
+.about__block-text {
+    font-family: 'IBM Plex Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
