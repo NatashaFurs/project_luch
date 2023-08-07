@@ -256,24 +256,25 @@ img {
     cursor: pointer;
 }
 
-
-
 .about__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     column-gap: 35px;
 }
 
-.about__content-one {
+/* 
+.about__content {
     display: flex;
-    flex-direction: column;
-    height: 1700px;
-    gap: 60px;
-}
+    justify-content: center;
+    column-gap: 35px;
+} */
 
+.about__content-one,
 .about__content-two {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 1700px;
     gap: 60px;
 }
@@ -303,4 +304,5 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    width: 405px;
 }
