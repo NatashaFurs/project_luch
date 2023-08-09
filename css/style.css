@@ -49,7 +49,8 @@ ul {
 }
 
 h1,
-h4 {
+h4,
+img {
     padding: 0;
     margin: 0;
 }
@@ -326,9 +327,15 @@ img {
 
 
 .possibilities {
+    background: url(../images/possibilities__fone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     margin-bottom: 80px;
     position: relative;
 }
+
+.possibilities__inner {}
 
 .possibilities__graphic-two {
     position: absolute;
@@ -338,9 +345,12 @@ img {
 }
 
 .possibilities__content {
+
     display: flex;
     justify-content: flex-start;
-    gap: 210px
+    gap: 210px;
+    margin-bottom: 145px;
+
 }
 
 .possibilities__block-one {
@@ -356,7 +366,6 @@ img {
     text-transform: uppercase;
 }
 
-
 .possibilities__block-two {
     display: grid;
     grid-template-columns: 288px 288px;
@@ -364,6 +373,9 @@ img {
 }
 
 .possibilities__possible {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 288px;
     height: 290px;
     background-color: #fff;
@@ -371,13 +383,56 @@ img {
 }
 
 .possible__title {
+    align-self: self-start;
     line-height: 38px;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #E0013F;
-    padding: 28px 36px 0 38px;
+    width: 214px;
+    height: 83px;
+    padding-left: 38px;
 }
 
-.possible__img {
-    padding: 33px 23px 25px 145px;
+.possible__icon {
+    align-self: flex-end;
+    padding-right: 23px;
+}
+
+.possibilities__booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.booking__title {
+    font-size: 56px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.booking__text {
+    line-height: 56px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.booking__btn {
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 22px;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background-color: #0069E4;
+    padding: 20px 30px;
+    border: none;
+    margin-top: 49px;
+}
+
+.possibilities__graphic-three {
+
+    left: 0px;
+    top: 300px;
 }
