@@ -339,8 +339,8 @@ img {
 
 .possibilities__content {
     display: flex;
-    justify-content: center;
-    gap: 210px;
+    justify-content: flex-start;
+    gap: 210px
 }
 
 .possibilities__block-one {
@@ -350,6 +350,7 @@ img {
 }
 
 .possibilities__title {
+    width: 564px;
     font-size: 96px;
     letter-spacing: 8px;
     text-transform: uppercase;
