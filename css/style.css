@@ -332,7 +332,7 @@ img {
 
 .possibilities__graphic-two {
     position: absolute;
-    right: 0;
+    right: 131px;
     z-index: -4;
     top: -300px;
 }
