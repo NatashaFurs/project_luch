@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Луч</title>
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-
     </head>
 
     <body>
         <header class="header">
-            <div class="container container__header">
-                <div class="header__top">
-                    <a class="header__top-link" href="#">
-                        Забронировать лед
-                    </a>
 
-                    <div class="header__top-menu">
-                        <input id="menu__burger" type="checkbox">
-                        <label class="menu__btn" for="menu__burger">
-                            <span></span>
-                        </label>
+            <div class="header__top">
+                <a class="header__top-link" href="#">
+                    Забронировать лед
+                </a>
 
-                        <ul class="header__top-menu-list">
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">мы</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">возможности</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">преимущества</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">галерея</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">события</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">отзывы</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="header__phone" href="tel:+84956020232">8 495 602 02 32</a>
+                <div class="header__top-menu">
+                    <input id="menu__burger" type="checkbox">
+                    <label class="menu__btn" for="menu__burger">
+                        <span></span>
+                    </label>
+
+                    <ul class="header__top-menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">мы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">возможности</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">преимущества</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">галерея</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">события</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">отзывы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">контакты</a>
+                        </li>
+                    </ul>
                 </div>
-
+                <a class="header__phone" href="tel:+84956020232">8 495 602 02 32</a>
+            </div>
+            <div class="container">
                 <div class="header__logo">
                     <a class="logo" href="#">
-                        <img class="logo" src="images/logo.png" alt="logo">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
                     </a>
                 </div>
 
@@ -73,33 +74,36 @@
 
         <main>
             <section class="about">
-                <div class=" container container__main">
-                    <div class="about__inner">
-                        <div class="about__graphic">
-                            <img class="about__graphic-one" src="images/graphic-1.png" alt="">
-                        </div>
+                <div class="about__inner">
+                    <div class="about__graphic">
+                        <img class="about__graphic-one" src="images/graphic-1.png" alt="">
+                    </div>
 
-                        <div class="about__top">
-                            <div class="about__top-info">
-                                <p class="about__text">
-                                    Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
-                                </p>
-                                <div class="about__button">
-                                    <a class="about__button-link" href="#">
-                                        оставить заявку
-                                    </a>
-                                </div>
+                    <div class="about__top">
+                        <div class="about__top-info">
+                            <p class="about__text">
+                                Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
+                            </p>
+                            <div class="about__button">
+                                <a class="about__button-link" href="#">
+                                    оставить заявку
+                                </a>
                             </div>
-                            <div class="about__gallery">
-                                <img class="about__gallery-photo-one" src="images/about-1.png" alt="">
-                                <img class="about__gallery-photo-two" src="images/about-2.png" alt="">
-                                <div class="about__gallery-arrows">
+                        </div>
+                        <div class="about__gallery">
+                            <img class="about__gallery-photo-one" src="images/about-1.png" alt="">
+                            <img class="about__gallery-photo-two" src="images/about-2.png" alt="">
+                            <div class="about__gallery-arrows">
+                                <button class="about__arrow">
                                     <img class="about__gallery-arrow-left" src="images/about__arrow-left.png" alt="">
+                                </button>
+                                <button class="about__arrow">
                                     <img class="about__gallery-arrow-right" src="images/about__arrow-right.png" alt="">
-                                </div>
+                                </button>
                             </div>
                         </div>
-
+                    </div>
+                    <div class=" container">
                         <div class="about__content">
                             <div class="about__content-one">
                                 <div class="about__content-block">
@@ -194,9 +198,51 @@
                     </div>
                 </div>
             </section>
+
+            <section class="possibilities">
+                <div class="possibilities__inner">
+                    <div class="possibilities__graphic">
+                        <img class="possibilities__graphic-two" src="images/graphic-2.png" alt="">
+                    </div>
+                    <div class="possibilities__content">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1373" viewBox="0 0 1920 1373"
+                            fill="none">
+                            <path d="M0 0.616699L1920 329.999V1013.03L2.57492e-05 1372.2L0 0.616699Z" fill="#F1F7FF" />
+                        </svg> -->
+                        <div class="possibilities__block-one">
+                            <h2 class="possibilities__title">возможности</h2>
+                        </div>
+                        <div class="possibilities__block-two">
+                            <div class="possibilities__possible">
+                                <h4 class="possible__title">заточка коньков</h4>
+                                <img class="possible__img" src="images/possible-1.png" alt="">
+                            </div>
+                            <div class="possibilities__possible">
+                                <h4 class="possible__title">кафе</h4>
+                                <img class="possible__img" src="images/possible-2.png" alt="">
+                            </div>
+                            <div class="possibilities__possible">
+                                <h4 class="possible__title">сушилка</h4>
+                                <img class="possible__img" src="images/possible-3.png" alt="">
+                            </div>
+                            <div class="possibilities__possible">
+                                <h4 class="possible__title">проведение мероприятий</h4>
+                                <img class="possible__img" src="images/possible-4.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="possibilities__graphic">
+                        <img class="possibilities__graphic-three" src="images/graphic-3.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+
         </main>
-
-
 
     </body>
 
