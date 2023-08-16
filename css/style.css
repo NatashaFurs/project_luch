@@ -55,10 +55,6 @@ img {
     margin: 0;
 }
 
-img {
-    object-fit: cover;
-}
-
 .container {
     max-width: 1544px;
     margin: 0 auto;
@@ -84,7 +80,7 @@ img {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 90px;
-    position: relative;
+    /* position: relative; */
 }
 
 .header__top-menu {
@@ -213,14 +209,9 @@ img {
 }
 
 
-
-.about {
-    margin-bottom: 150px;
-}
-
 .about__graphic-one {
     position: absolute;
-    z-index: -5;
+    z-index: -4;
     top: 600px;
 }
 
@@ -273,12 +264,11 @@ img {
     padding-right: 32px;
 }
 
-
 .about__content {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    column-gap: 35px;
+    column-gap: 40px;
 }
 
 /* 
@@ -288,12 +278,17 @@ img {
     column-gap: 35px;
 } */
 
-.about__content-one,
+.about__content-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
 .about__content-two {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 1700px;
     gap: 60px;
 }
 
@@ -302,9 +297,13 @@ img {
     grid-template-columns: auto auto;
     column-gap: 43px;
     width: 736px;
+    border: none;
 }
 
 .about__block-foto {
+    width: 288px;
+    height: 291px;
+    object-fit: contain;
     margin-bottom: 88px;
 }
 
@@ -326,29 +325,35 @@ img {
 }
 
 
+.about__graphic-two {
+    position: absolute;
+    right: 130px;
+    transform: translateY(-150px);
+    z-index: -4;
+}
+
 .possibilities {
     background: url(../images/possibilities__fone.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 80px;
+    background-size: contain;
+    background-position: top;
+    height: 1370px;
     position: relative;
+    z-index: -2;
+    top: -200px;
 }
 
-.possibilities__inner {}
-
-.possibilities__graphic-two {
+.possibilities__inner {
     position: absolute;
-    right: 131px;
-    z-index: -4;
-    top: -300px;
+    top: 180px;
 }
 
 .possibilities__content {
+    width: 1375px;
     display: flex;
     justify-content: flex-start;
     gap: 210px;
-    margin-bottom: 145px;
+    margin: 152px 0 78px;
 }
 
 .possibilities__block-one {
@@ -377,11 +382,11 @@ img {
     width: 288px;
     height: 290px;
     background-color: #fff;
-    border: 1px solid black;
+
 }
 
 .possible__title {
-    align-self: self-start;
+    align-self: flex-start;
     line-height: 38px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -404,12 +409,19 @@ img {
     background-image: url(../images/booking__fone.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 1217px;
+    /* margin: 0 auto; */
 }
 
 .booking__title {
+    width: 910px;
+    align-self: center;
+    text-align: center;
     font-size: 56px;
     letter-spacing: 8px;
     text-transform: uppercase;
+    padding: 10px;
+    margin-top: 56px;
 }
 
 .booking__text {
@@ -432,7 +444,35 @@ img {
 }
 
 .possibilities__graphic-three {
-
+    position: relative;
     left: 0px;
-    top: 300px;
+    z-index: -1;
+    top: 660px;
+}
+
+.advantages {
+    background-image: url(../images/advantages-fone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1270px;
+    position: relative;
+    top: -600px;
+    z-index: -4;
+}
+
+.advantages__title {
+
+    margin: 108px 0 497px;
+}
+
+.advantages__title-title {
+    color: #E0013F;
+    font-size: 96px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.advantages__content {
+    display: flex;
 }
