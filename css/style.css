@@ -211,8 +211,8 @@ img {
 
 .about__graphic-one {
     position: absolute;
-    z-index: -4;
-    top: 600px;
+    z-index: -1;
+    top: 620px;
 }
 
 .about__top {
@@ -329,7 +329,7 @@ img {
     position: absolute;
     right: 130px;
     transform: translateY(-150px);
-    z-index: -4;
+    z-index: -6;
 }
 
 .possibilities {
@@ -340,18 +340,19 @@ img {
     height: 1370px;
     position: relative;
     z-index: -2;
-    top: -200px;
+    top: -350px;
 }
 
 .possibilities__inner {
-    position: absolute;
-    top: 180px;
+    position: relative;
+
+    top: 320px;
 }
 
 .possibilities__content {
-    width: 1375px;
     display: flex;
     justify-content: flex-start;
+    width: 1375px;
     gap: 210px;
     margin: 152px 0 78px;
 }
@@ -382,7 +383,6 @@ img {
     width: 288px;
     height: 290px;
     background-color: #fff;
-
 }
 
 .possible__title {
@@ -410,7 +410,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1217px;
-    /* margin: 0 auto; */
+    margin-right: 0;
 }
 
 .booking__title {
@@ -446,8 +446,8 @@ img {
 .possibilities__graphic-three {
     position: relative;
     left: 0px;
-    z-index: -1;
-    top: 660px;
+    z-index: -5;
+    top: -360px;
 }
 
 .advantages {
@@ -457,17 +457,23 @@ img {
     background-position: center;
     height: 1270px;
     position: relative;
-    top: -600px;
-    z-index: -4;
+    top: -710px;
+    z-index: -3;
+}
+
+.advantages__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 108px;
 }
 
 .advantages__title {
-
-    margin: 108px 0 497px;
+    margin-top: 498px;
 }
 
 .advantages__title-title {
-    color: #E0013F;
+    color: #fff;
     font-size: 96px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -475,4 +481,29 @@ img {
 
 .advantages__content {
     display: flex;
+}
+
+.advantages__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 240px;
+    height: 250px;
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: none;
+
+}
+
+.advantages__block-title {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.advantages__block-img {
+    width: 147px;
+    height: 140px;
 }
