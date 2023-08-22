@@ -293,7 +293,6 @@ img {
     right: -65px;
     transform: translateY(1550px);
     z-index: -6;
-
 }
 
 .about__content-one {
@@ -360,7 +359,7 @@ img {
     height: 690px;
     position: absolute;
     bottom: -15px;
-    z-index: -8;
+    z-index: -4;
 }
 
 .possibilities__inner {}
@@ -401,7 +400,6 @@ img {
     width: 288px;
     height: 290px;
     background-color: #fff;
-    border: 1px solid black;
 }
 
 .possible__title {
@@ -420,7 +418,18 @@ img {
     padding-right: 23px;
 }
 
-.possibilities__booking {
+
+.advantages {
+    background-image: url(../images/advantages-fone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1290px;
+    margin-top: -390px;
+    position: relative;
+}
+
+.advantages__booking {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -430,8 +439,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: auto;
-    border: 1px solid black;
+    margin: 25px auto 180px;
 }
 
 .booking__title {
@@ -463,17 +471,6 @@ img {
     margin-top: 49px;
 }
 
-.advantages {
-    background-image: url(../images/advantages-fone.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 1290px;
-    margin-top: -360px;
-    position: relative;
-    z-index: -6;
-}
-
 .advantages__inner {
     display: flex;
     flex-direction: column;
@@ -481,9 +478,7 @@ img {
     gap: 108px;
 }
 
-.advantages__title {
-    margin-top: 498px;
-}
+.advantages__title {}
 
 .advantages__title-title {
     color: #fff;
