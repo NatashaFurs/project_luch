@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Druk Cur';
-    src: url("../fonts/DrukCyr-Medium.woff"),
-        url("../fonts/DrukCyr-Medium.woff2");
+    src: url("../fonts/DrukCyr-Medium.woff") format('woff'),
+        url("../fonts/DrukCyr-Medium.woff2") format('woff2');
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'IBM Plex Sans';
-    src: url("../fonts/IBMPlexSans-Regular.woff"),
-        url("../fonts/AnyConv.com__IBMPlexSans-Regular.woff2");
+    src: url("../fonts/IBMPlexSans-Regular.woff") format('woff'),
+        url("../fonts/AnyConv.com__IBMPlexSans-Regular.woff2") format('woff2');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url("../fonts/AnyConv.com__ofont.ru_Bebas\ Neue.woff"),
-        url("../fonts/AnyConv.com__ofont.ru_Bebas\ Neue.woff2");
+    src: url("../fonts/AnyConv.com__ofont.ru_Bebas\ Neue.woff") format('woff'),
+        url("../fonts/AnyConv.com__ofont.ru_Bebas\ Neue.woff2") format('woff2');
     font-style: normal;
     font-weight: 700;
 }
@@ -208,18 +208,23 @@ img {
     margin: 0 auto;
 }
 
-
-.about__graphic-one {
-    position: absolute;
-    z-index: -1;
-    top: 620px;
-}
-
 .about__top {
     display: flex;
     padding: 147px 0 0 195px;
     gap: 180px;
     margin-bottom: 80px;
+    position: relative;
+}
+
+.about__top::before {
+    content: "";
+    background-image: url(../images/graphic-1.png);
+    width: 597px;
+    height: 625px;
+    position: absolute;
+    left: 0;
+    top: -370px;
+    z-index: -1;
 }
 
 .about__top-info {
@@ -269,6 +274,7 @@ img {
     grid-template-columns: auto auto;
     justify-content: center;
     column-gap: 40px;
+    position: relative;
 }
 
 /* 
@@ -277,6 +283,18 @@ img {
     justify-content: center;
     column-gap: 35px;
 } */
+
+.about__content::after {
+    content: "";
+    background-image: url(../images/graphic-2.png);
+    width: 526px;
+    height: 422px;
+    position: absolute;
+    right: -65px;
+    transform: translateY(1550px);
+    z-index: -6;
+
+}
 
 .about__content-one {
     display: flex;
@@ -324,37 +342,37 @@ img {
     width: 405px;
 }
 
-
-.about__graphic-two {
-    position: absolute;
-    right: 130px;
-    transform: translateY(-150px);
-    z-index: -6;
-}
-
 .possibilities {
     background: url(../images/possibilities__fone.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    position: relative;
     height: 1370px;
-    position: relative;
-    z-index: -2;
-    top: -350px;
+    margin-top: -200px;
+    z-index: -5;
 }
 
-.possibilities__inner {
-    position: relative;
-
-    top: 320px;
+.possibilities::after {
+    content: "";
+    background-image: url(../images/graphic-3.png);
+    background-repeat: no-repeat;
+    width: 747px;
+    height: 690px;
+    position: absolute;
+    bottom: -15px;
+    z-index: -8;
 }
+
+.possibilities__inner {}
 
 .possibilities__content {
     display: flex;
     justify-content: flex-start;
-    width: 1375px;
+    width: 1376px;
     gap: 210px;
-    margin: 152px 0 78px;
+    padding-top: 344px;
+    margin-bottom: 88px;
+    position: relative;
 }
 
 .possibilities__block-one {
@@ -383,6 +401,7 @@ img {
     width: 288px;
     height: 290px;
     background-color: #fff;
+    border: 1px solid black;
 }
 
 .possible__title {
@@ -406,15 +425,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 1217px;
     background-image: url(../images/booking__fone.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1217px;
-    margin-right: 0;
+    background-size: cover;
+    margin: auto;
+    border: 1px solid black;
 }
 
 .booking__title {
-    width: 910px;
     align-self: center;
     text-align: center;
     font-size: 56px;
@@ -443,22 +463,15 @@ img {
     margin-top: 49px;
 }
 
-.possibilities__graphic-three {
-    position: relative;
-    left: 0px;
-    z-index: -5;
-    top: -360px;
-}
-
 .advantages {
     background-image: url(../images/advantages-fone.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 1270px;
+    height: 1290px;
+    margin-top: -360px;
     position: relative;
-    top: -715px;
-    z-index: -3;
+    z-index: -6;
 }
 
 .advantages__inner {
@@ -492,7 +505,6 @@ img {
     border: 1px solid #fff;
     border-top: none;
     border-bottom: none;
-
 }
 
 .advantages__block-title {
