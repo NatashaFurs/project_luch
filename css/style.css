@@ -502,7 +502,11 @@ img {
     justify-content: space-between;
     width: 240px;
     height: 250px;
-    border: 1px solid #fff;
+}
+
+.advantages__block+.advantages__block {
+    border-left: 1px solid #fff;
+    border-right: none;
     border-top: none;
     border-bottom: none;
 }
