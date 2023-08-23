@@ -491,6 +491,7 @@ img {
 .advantages__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid #fff;
     border-top: none;
     border-bottom: none;
@@ -523,4 +524,58 @@ img {
 .advantages__block-img {
     width: 147px;
     height: 140px;
+}
+
+.gallery {
+    background-image: url(../images/gallery-fone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 1308px;
+    margin-top: -205px;
+    position: relative;
+}
+
+.gallery::before {
+    content: "";
+    background-image: url(../images/graphic-4.png);
+    background-repeat: no-repeat;
+    width: 297px;
+    height: 621px;
+    position: absolute;
+    right: 0px;
+    top: -150px;
+    z-index: -2;
+}
+
+.gallery__title {
+    padding-top: 254px;
+    margin-bottom: 88px;
+}
+
+.gallery__title-title {
+    font-size: 96px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.gallery__photos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.gallery__gallery-arrows {
+    width: 1544px;
+    margin: 0 auto;
+}
+
+.gallery__arrow {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.gallery__gallery-arrow-left {
+    padding-right: 32px;
 }
