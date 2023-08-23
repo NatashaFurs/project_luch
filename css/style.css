@@ -579,3 +579,12 @@ img {
 .gallery__gallery-arrow-left {
     padding-right: 32px;
 }
+
+
+
+
+
+.events__arrows {
+    display: flex;
+    justify-content: flex-end;
+}
