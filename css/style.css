@@ -358,18 +358,16 @@ img {
     width: 747px;
     height: 690px;
     position: absolute;
-    bottom: -15px;
+    bottom: 60px;
     z-index: -4;
 }
-
-.possibilities__inner {}
 
 .possibilities__content {
     display: flex;
     justify-content: flex-start;
     width: 1376px;
     gap: 210px;
-    padding-top: 344px;
+    padding-top: 320px;
     margin-bottom: 88px;
     position: relative;
 }
@@ -426,7 +424,10 @@ img {
     background-position: center;
     height: 1290px;
     margin-top: -390px;
-    position: relative;
+}
+
+.advantages__inner {
+    padding-top: 25px;
 }
 
 .advantages__booking {
@@ -435,11 +436,12 @@ img {
     justify-content: center;
     align-items: center;
     width: 1217px;
+    height: 272px;
     background-image: url(../images/booking__fone.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 25px auto 180px;
+    margin: 0px auto 180px;
 }
 
 .booking__title {
@@ -448,14 +450,15 @@ img {
     font-size: 56px;
     letter-spacing: 8px;
     text-transform: uppercase;
-    padding: 10px;
     margin-top: 56px;
+    margin-bottom: 5px;
 }
 
 .booking__text {
     line-height: 56px;
     letter-spacing: 4px;
     text-transform: uppercase;
+    margin-bottom: 49px;
 }
 
 .booking__btn {
@@ -466,35 +469,37 @@ img {
     letter-spacing: 5px;
     text-transform: uppercase;
     background-color: #0069E4;
-    padding: 20px 30px;
+    padding: 20px 30px 18px;
     border: none;
-    margin-top: 49px;
 }
 
-.advantages__inner {
+.advantages__advantages {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 108px;
 }
 
-.advantages__title {}
-
 .advantages__title-title {
     color: #fff;
     font-size: 96px;
     letter-spacing: 8px;
     text-transform: uppercase;
+    padding: 0;
 }
 
 .advantages__content {
     display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: none;
 }
 
 .advantages__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 240px;
     height: 250px;
     border: 1px solid #fff;
@@ -508,6 +513,7 @@ img {
     line-height: 36px;
     letter-spacing: 4px;
     text-transform: uppercase;
+    padding: 0px 13px;
 }
 
 .advantages__block-img {
