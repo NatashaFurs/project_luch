@@ -544,7 +544,7 @@ img {
     height: 621px;
     position: absolute;
     right: 0px;
-    top: -150px;
+    top: -140px;
     z-index: -2;
 }
 
@@ -587,4 +587,17 @@ img {
 .events__arrows {
     display: flex;
     justify-content: flex-end;
+}
+
+
+
+
+
+.reviews {
+    background-image: url(../images/reviews-fone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 1205px;
+    position: relative;
 }
