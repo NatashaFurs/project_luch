@@ -62,9 +62,10 @@ img {
 }
 
 .header {
-    background-image: linear-gradient(180deg, #0044C8 0%, rgba(0, 105, 228, 0.0) 70%),
+    background-image:
+        linear-gradient(180deg, #0044C8 0%, rgba(0, 105, 228, 0.0) 70%),
         url(../images/header.png);
-    /* mix-blend-mode: multiply; */
+    mix-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -204,7 +205,7 @@ img {
     line-height: 28px;
     color: #000;
     text-align: center;
-    width: 415px;
+    max-width: 415px;
     margin: 0 auto;
 }
 
@@ -219,12 +220,14 @@ img {
 .about__top::before {
     content: "";
     background-image: url(../images/graphic-1.png);
-    width: 597px;
+    background-repeat: no-repeat;
+    /* width: 597px; */
+    width: 50%;
     height: 625px;
     position: absolute;
     left: 0;
     top: -370px;
-    z-index: -1;
+    z-index: -4;
 }
 
 .about__top-info {
@@ -287,6 +290,7 @@ img {
 .about__content::after {
     content: "";
     background-image: url(../images/graphic-2.png);
+    background-repeat: no-repeat;
     width: 526px;
     height: 422px;
     position: absolute;
@@ -480,7 +484,7 @@ img {
     gap: 108px;
 }
 
-.advantages__title-title {
+.advantages__title {
     color: #fff;
     font-size: 96px;
     letter-spacing: 8px;
@@ -551,18 +555,17 @@ img {
 .gallery__title {
     padding-top: 254px;
     margin-bottom: 88px;
-}
-
-.gallery__title-title {
     font-size: 96px;
+    line-height: normal;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
 
 .gallery__photos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .gallery__gallery-arrows {
@@ -580,18 +583,81 @@ img {
     padding-right: 32px;
 }
 
+.events__inner {
+    margin-top: -170px;
 
+}
 
+.events__title {
+    font-size: 96px;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
 
+.events__events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 65px;
+}
+
+.event__one,
+.event__two {
+    display: flex;
+    width: 755px;
+    height: 252px;
+    padding: 52px 37px 49px 2px;
+    border-top: 2px solid #0069E4;
+    border-bottom: 2px solid #0069E4;
+}
 
 .events__arrows {
     display: flex;
     justify-content: flex-end;
+
 }
 
+.event__arrow {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+.event__arrow-left {
+    padding-right: 32px;
+}
 
+.event__number {
+    color: #E0013F;
+    font-size: 96px;
+    line-height: normal;
+    letter-spacing: 17px;
+    text-transform: uppercase;
+}
 
+.event__month {
+    color: #E0013F;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.event__line-line {
+    padding-left: 32px;
+    padding-right: 58px;
+}
+
+.event__text {
+    font-family: 'IBM Plex Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
 
 .reviews {
     background-image: url(../images/reviews-fone.png);
