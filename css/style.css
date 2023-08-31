@@ -574,6 +574,11 @@ img {
     margin: 0 auto;
 }
 
+.events {
+    width: 100%;
+    background-color: #fff;
+}
+
 .events__inner {
     margin-top: -170px;
 }
@@ -607,7 +612,6 @@ img {
 .events__arrows {
     display: flex;
     justify-content: flex-end;
-
 }
 
 .event__number {
@@ -645,17 +649,70 @@ img {
     background-position: center;
     background-size: contain;
     height: 1205px;
+    position: relative;
 }
+
 
 .reviews__inner {
     padding: 450px 0 0 196px;
     display: flex;
-    gap: 220px;
+    gap: 218px;
 }
 
 .reviews__title {
-    width: 550px;
     font-size: 96px;
     letter-spacing: 8px;
     text-transform: uppercase;
+}
+
+.reviews__block {
+    position: relative;
+}
+
+.reviews__block::before {
+    content: "";
+    background-image: url(../images/graphic-5.png);
+    background-repeat: no-repeat;
+    width: 410px;
+    height: 378px;
+    position: absolute;
+    right: 0px;
+    transform: translateY(-270px);
+}
+
+.reviews__reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.review__review {
+    width: 600px;
+    height: 351px;
+    background: #fff;
+}
+
+.review__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
+    padding: 44px 42px 0 34px;
+}
+
+.review__title {
+    color: #0069E4;
+    text-align: right;
+    line-height: 38px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.review__text {
+    font-family: 'IBM Plex Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 0 42px 48px 47px;
 }
