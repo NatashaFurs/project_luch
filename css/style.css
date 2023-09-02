@@ -425,7 +425,7 @@ img {
 .advantages {
     background-image: url(../images/advantages-fone.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 1290px;
     margin-top: -390px;
@@ -535,7 +535,7 @@ img {
     background-image: url(../images/gallery-fone.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     height: 1308px;
     margin-top: -205px;
     position: relative;
@@ -643,15 +643,16 @@ img {
     line-height: 32px;
 }
 
+
+
+
 .reviews {
     background-image: url(../images/reviews-fone.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     height: 1205px;
-    position: relative;
 }
-
 
 .reviews__inner {
     padding: 450px 0 0 196px;
