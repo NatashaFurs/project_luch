@@ -218,7 +218,7 @@ img {
 }
 
 .about__top::before {
-    content: "";
+    content: '';
     background-image: url(../images/graphic-1.png);
     background-repeat: no-repeat;
     /* width: 597px; */
@@ -235,7 +235,7 @@ img {
     flex-direction: column;
     justify-content: center;
     gap: 80px;
-    width: 575px;
+    max-width: 575px;
 }
 
 .about__text {
@@ -289,7 +289,7 @@ img {
 
 
 .about__content::after {
-    content: "";
+    content: '';
     background-image: url(../images/graphic-2.png);
     background-repeat: no-repeat;
     width: 526px;
@@ -318,7 +318,7 @@ img {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 43px;
-    width: 736px;
+    max-width: 736px;
     border: none;
 }
 
@@ -357,7 +357,7 @@ img {
 }
 
 .possibilities::after {
-    content: "";
+    content: '';
     background-image: url(../images/graphic-3.png);
     background-repeat: no-repeat;
     width: 747px;
@@ -530,6 +530,7 @@ img {
     width: 147px;
     height: 140px;
 }
+
 
 .gallery {
     background-image: url(../images/gallery-fone.png);
