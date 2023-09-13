@@ -710,7 +710,8 @@ img {
     text-transform: uppercase;
 }
 
-.review__text {
+.review__text-one,
+.review__text-two {
     font-family: 'IBM Plex Sans';
     font-size: 24px;
     font-style: normal;
@@ -718,3 +719,5 @@ img {
     line-height: 32px;
     padding: 0 42px 48px 47px;
 }
+
+.review__text-two {}
