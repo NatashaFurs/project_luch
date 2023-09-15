@@ -646,8 +646,6 @@ img {
 }
 
 
-
-
 .reviews {
     background-image: url(../images/reviews-fone.png);
     background-repeat: no-repeat;
@@ -658,7 +656,7 @@ img {
 }
 
 .reviews::before {
-    content: "";
+    content: '';
     background-image: url(../images/graphic-5.png);
     background-repeat: no-repeat;
     width: 296px;
@@ -669,13 +667,13 @@ img {
 }
 
 .reviews::after {
-    content: "";
+    content: '';
     background-image: url(../images/graphic-6.png);
     background-repeat: no-repeat;
     width: 726px;
     height: 639px;
     position: absolute;
-    bottom: -25px;
+    bottom: -110px;
 }
 
 .reviews__inner {
@@ -732,4 +730,44 @@ img {
     padding: 0 42px 48px 47px;
 }
 
-.review__text-two {}
+
+.contacts {
+    background-image: url(../images/contacts-fone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 676px;
+    margin-top: -160px;
+    position: relative;
+}
+
+.contacts__inner {
+    padding: 327px 0 256px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 370px;
+}
+
+.contacts__title {
+    font-size: 96px;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contacts__contacts {
+    line-height: 38px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    display: grid;
+    gap: 18px 40px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.contacts__address {
+    grid-column: 1/3;
+}
