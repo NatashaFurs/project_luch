@@ -467,10 +467,11 @@ img {
     margin-bottom: 49px;
 }
 
-.booking__btn {
+.button {
     color: #fff;
     font-family: 'Bebas Neue';
     font-size: 22px;
+    font-weight: 700;
     line-height: normal;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -651,7 +652,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1205px;
+    height: 1206px;
     position: relative;
 }
 
@@ -673,7 +674,7 @@ img {
     width: 726px;
     height: 639px;
     position: absolute;
-    bottom: -110px;
+    bottom: -26px;
 }
 
 .reviews__inner {
@@ -737,12 +738,12 @@ img {
     background-position: center;
     background-size: contain;
     height: 676px;
-    margin-top: -160px;
+    margin-top: -260px;
     position: relative;
 }
 
 .contacts__inner {
-    padding: 327px 0 256px 0;
+    padding: 327px 0 194px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -763,11 +764,68 @@ img {
     text-transform: uppercase;
     color: #fff;
     display: grid;
-    gap: 18px 40px;
+    gap: 18px 0px;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
 }
 
 .contacts__address {
     grid-column: 1/3;
+}
+
+.contacts__phone {
+    border-right: 1px solid #fff;
+    padding-right: 40px;
+}
+
+.contacts__mail {
+    padding-left: 40px;
+}
+
+.contacts__rectangle {
+    display: flex;
+    justify-content: center;
+}
+
+
+.map {
+    background-image:
+        url(../images/map.png);
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -212px;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 152px;
+}
+
+.connect__title {
+    font-size: 56px;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.connect__text {
+    line-height: 38px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.footer {
+    background-color: #E0013F;
+    margin-top: -30px
 }
