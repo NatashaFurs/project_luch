@@ -81,12 +81,26 @@ img {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 90px;
-    /* position: relative; */
+}
+
+.header__top-link,
+.header__top-menu,
+.header__phone {
+    width: 270px;
+}
+
+.header__top-link {
+    text-align: start;
+}
+
+.header__phone {
+    text-align: end;
 }
 
 .header__top-menu {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #menu__burger {
@@ -139,13 +153,15 @@ img {
     position: absolute;
     visibility: hidden;
     top: 300px;
-    width: 1212px;
+    /* width: 1212px; */
+    width: 100%;
     list-style-type: none;
     margin: 0;
     text-align: center;
     background-color: #0069E4;
     background-position: center center;
     background-attachment: fixed;
+    z-index: 1;
     transition-duration: .10s;
 }
 
