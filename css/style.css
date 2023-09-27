@@ -845,6 +845,25 @@ img {
     position: relative;
 }
 
+.connect__graphic-white1 {
+    position: absolute;
+    top: -403px;
+    left: 105px;
+}
+
+.connect__graphic-white2 {
+    position: absolute;
+    top: -350px;
+    left: 205px;
+}
+
+.connect__graphic-red {
+    position: absolute;
+    top: -300px;
+    left: -93px;
+}
+
+/* 
 .connect::before {
     content: '';
     background-image: url(../images/graphic-7.png);
@@ -855,9 +874,9 @@ img {
     position: absolute;
     top: -400px;
     margin-left: -93px;
-    /* transform: translateX(-93px); */
-    left: 0px;
+   left: 0px;
 }
+*/
 
 .connect::after {
     content: '';
