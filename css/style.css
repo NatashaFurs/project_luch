@@ -64,7 +64,7 @@ img {
 .header {
     background-image:
         linear-gradient(180deg, #0044C8 0%, rgba(0, 105, 228, 0.0) 70%),
-        url(../images/header.png);
+        url(../images/header-fone1.jpg);
     /* mix-blend-mode: multiply; */
     background-repeat: no-repeat;
     background-position: center center;
@@ -276,8 +276,12 @@ img {
     cursor: pointer;
 }
 
-.about__gallery-photo-one {
-    padding-right: 18px;
+.about__gallery-foto {
+    max-width: 960px;
+    height: 500px;
+    gap: 18px;
+    display: flex;
+    overflow: hidden;
 }
 
 .arrow__arrow {
@@ -576,7 +580,7 @@ img {
 }
 
 .gallery__title {
-    padding-top: 254px;
+    padding-top: 225px;
     margin-bottom: 88px;
     font-size: 96px;
     line-height: normal;
@@ -586,14 +590,18 @@ img {
 
 .gallery__photos {
     display: flex;
-    justify-content: flex-end;
+    max-width: 1900px;
+    height: 430px;
+    overflow: hidden;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
+    margin-left: 24px;
 }
 
 .gallery__gallery-arrows {
     width: 1544px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .events {
@@ -699,10 +707,11 @@ img {
 .reviews__inner {
     padding: 450px 0 0 196px;
     display: flex;
-    gap: 218px;
+    gap: 504px;
 }
 
 .reviews__title {
+    /* width: 550px; */
     font-size: 96px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -713,14 +722,17 @@ img {
 }
 
 .reviews__reviews {
+    max-width: 935px;
+    height: 351px;
     display: flex;
-    justify-content: center;
     gap: 20px;
+    overflow: hidden;
     margin-bottom: 80px;
 }
 
 .review__review {
-    width: 600px;
+    display: block;
+    min-width: 600px;
     height: 351px;
     background: #fff;
 }
