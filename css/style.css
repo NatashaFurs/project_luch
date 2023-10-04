@@ -109,7 +109,7 @@ img {
 }
 
 #menu__burger:checked~.menu__btn>span {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 #menu__burger:checked~.menu__btn>span::before {
@@ -134,14 +134,13 @@ img {
     width: 100%;
     height: 2px;
     background-color: #fff;
-    transition-duration: .10s;
+    transition-duration: .5s;
 }
 
 .menu__btn>span::before {
     content: '';
     top: -10px;
 }
-
 
 #menu__burger:checked~.menu__page {
     display: block;
@@ -159,7 +158,7 @@ img {
     background-attachment: fixed;
     z-index: 1;
     padding-top: 28px;
-    transition-duration: .10s;
+    transition-duration: .5s;
 }
 
 .menu__top {
@@ -238,13 +237,6 @@ img {
     padding-left: 10px;
     border-left: 1px solid;
 }
-
-
-
-
-
-
-
 
 .header__logo {
     display: flex;
