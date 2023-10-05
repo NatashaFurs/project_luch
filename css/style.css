@@ -66,6 +66,8 @@ img {
 
 .wrapper {
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -294,6 +296,9 @@ img {
 }
 
 
+.main {
+    flex-grow: 1;
+}
 
 
 .about__top {
@@ -1032,4 +1037,48 @@ img {
 
 .footer__logo {
     text-align: center;
+}
+
+
+
+
+
+.order {
+    background-color: #0069E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order__inner {
+    width: 480px;
+    height: 554px;
+    background-color: #fff;
+    padding: 80px 46px 38px 39px;
+}
+
+.order__title {
+    font-family: 'Druk Cur', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 47px;
+}
+
+.order__form {
+    margin-bottom: 27px;
+}
+
+.order__text {
+    color: #10102E;
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 33px;
 }

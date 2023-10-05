@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Форма</title>
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <body class="order">
+
+            <div class="order__inner">
+                <h3 class="order__title">Бронирование льда</h3>
+
+                <form class="order__form" action="">
+                    <div class="form__group">
+                        <label class="order__label" for="name">Имя</label>
+                        <input class="order__input" type="text" id="name" placeholder="Имя">
+                    </div>
+                    <div class="form__group">
+                        <label class="order__label" for="tel">Телефон</label>
+                        <input class="order__input" type="tel" id="tel" placeholder="+375(29)111-00-99"
+                            pattern="[+][0-9]{3}([0-9]{2})[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    </div>
+                    <div class="form__group">
+                        <label class="order__label" for="datetime">Дата и время</label>
+                        <input class="order__input" type="datetime-local" id="datetime">
+                    </div>
+                    <div class="form__group">
+                        <label class="order__label" for="name">Комментарий</label>
+                        <input class="order__input" type="text" id="name" placeholder="Комментарий">
+                    </div>
+                </form>
+
+                <p class="order__text">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                    политикой конфиденциальности.
+                </p>
+                <button class="order__button">Отправить</button>
+            </div>
+
+        </body>
+
+</html>
