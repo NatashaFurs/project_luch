@@ -1061,16 +1061,54 @@ img {
 .order__title {
     font-family: 'Druk Cur', sans-serif;
     font-size: 48px;
-    font-style: italic;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 3px;
+    font-style: italic;
+    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 47px;
 }
 
 .order__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     margin-bottom: 27px;
+}
+
+
+.order__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+}
+
+.order__group {
+    display: block;
+    font-family: 'IBM Plex Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#name,
+#tel {
+    width: 188px;
+    height: 41px;
+    padding-top: 9px;
+    border: none;
+    border-bottom: 1px solid #333333;
+
+}
+
+#datetime,
+#orderarea {
+    width: 100%;
+    min-height: 41px;
+    padding-top: 9px;
+    border: none;
+    border-bottom: 1px solid #333333;
 }
 
 .order__text {
@@ -1081,4 +1119,20 @@ img {
     font-weight: 400;
     line-height: 16px;
     margin-bottom: 33px;
+}
+
+.order__button {
+    width: 195px;
+    height: 60px;
+    background-color: #0069E4;
+    border: none;
+    color: #FFF;
+    font-family: 'Bebas Neue';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
