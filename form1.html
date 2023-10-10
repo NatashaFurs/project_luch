@@ -15,36 +15,39 @@
 
         <body class="order">
 
-            <div class="order__inner">
-                <h3 class="order__title">Бронирование льда</h3>
+            <div class="order__order">
+                <img class="ico__close" src="images/ico-close.svg" alt="ico-close">
+                <div class="order__inner">
+                    <h3 class="order__title">Бронирование льда</h3>
 
-                <form class="order__form" action="">
-                    <div class="order__box">
-                        <div class="order__group">
-                            <label class="order__label" for="name"></label>
-                            <input class="order__input" type="text" id="name" placeholder="Имя">
+                    <form class="order__form" action="">
+                        <div class="order__box">
+                            <div class="order__group">
+                                <label class="order__label" for="name"></label>
+                                <input class="order__input" type="text" id="name" placeholder="Имя">
+                            </div>
+                            <div class="order__group">
+                                <label class="order__label" for="tel"></label>
+                                <input class="order__input" type="tel" id="tel" placeholder="Телефон"
+                                    pattern="[+][0-9]{3}([0-9]{2})[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                            </div>
                         </div>
                         <div class="order__group">
-                            <label class="order__label" for="tel"></label>
-                            <input class="order__input" type="tel" id="tel" placeholder="Телефон"
-                                pattern="[+][0-9]{3}([0-9]{2})[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                            <label class="order__label" for="datetime"></label>
+                            <input class="order__input" type="text" id="datetime" placeholder="Дата и время">
                         </div>
-                    </div>
-                    <div class="order__group">
-                        <label class="order__label" for="datetime"></label>
-                        <input class="order__input" type="text" id="datetime" placeholder="Дата и время">
-                    </div>
-                    <div class="order__group">
-                        <textarea class="order__area" name="message" id="orderarea" cols="30" rows="1"
-                            placeholder="Комментарий"></textarea>
-                    </div>
-                </form>
+                        <div class="order__group">
+                            <textarea class="order__area" name="message" id="orderarea" cols="30" rows="1"
+                                placeholder="Комментарий"></textarea>
+                        </div>
+                    </form>
 
-                <p class="order__text">
-                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
-                    политикой конфиденциальности.
-                </p>
-                <button class="order__button">Отправить</button>
+                    <p class="order__text">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                        политикой конфиденциальности.
+                    </p>
+                    <button class="order__button">Отправить</button>
+                </div>
             </div>
 
         </body>

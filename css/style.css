@@ -1051,11 +1051,20 @@ img {
     align-items: center;
 }
 
-.order__inner {
+.order__order {
     width: 480px;
-    height: 554px;
+    height: fit-content;
     background-color: #fff;
-    padding: 80px 46px 38px 39px;
+
+}
+
+.order__inner {
+    padding: 0 38px 46px 39px;
+}
+
+.ico__close {
+    display: block;
+    margin-left: auto;
 }
 
 .order__title {
