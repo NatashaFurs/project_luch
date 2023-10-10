@@ -1041,9 +1041,7 @@ img {
 
 
 
-
-
-.order {
+.form {
     background-color: #0069E4;
     display: flex;
     flex-direction: column;
@@ -1051,14 +1049,14 @@ img {
     align-items: center;
 }
 
-.order__order {
+.form__container {
     width: 480px;
     height: fit-content;
     background-color: #fff;
 
 }
 
-.order__inner {
+.form__inner {
     padding: 0 38px 46px 39px;
 }
 
@@ -1067,7 +1065,7 @@ img {
     margin-left: auto;
 }
 
-.order__title {
+.form__title {
     font-family: 'Druk Cur', sans-serif;
     font-size: 48px;
     font-weight: 500;
@@ -1078,21 +1076,20 @@ img {
     margin-bottom: 47px;
 }
 
-.order__form {
+.form__form {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 27px;
 }
 
-
-.order__box {
+.form__box {
     display: flex;
     justify-content: space-between;
     gap: 19px;
 }
 
-.order__group {
+.form__group {
     display: block;
     font-family: 'IBM Plex Sans';
     font-size: 20px;
@@ -1113,7 +1110,7 @@ img {
 }
 
 #datetime,
-#orderarea {
+#formarea {
     width: 100%;
     min-height: 41px;
     padding-top: 9px;
@@ -1125,9 +1122,7 @@ img {
     visibility: none;
 }
 
-
-
-.order__text {
+.form__text {
     color: #10102E;
     font-family: 'IBM Plex Sans';
     font-size: 12px;
@@ -1137,7 +1132,7 @@ img {
     margin-bottom: 33px;
 }
 
-.order__button {
+.form__button {
     width: 195px;
     height: 60px;
     background-color: #0069E4;
