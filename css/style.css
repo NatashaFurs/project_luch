@@ -662,13 +662,14 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1217px;
+    width: clamp(320px, 100%, 1217px);
     height: 272px;
     background-image: url(../images/booking__fone.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0px auto 180px;
+    overflow: hidden;
 }
 
 .booking__title {
@@ -1284,6 +1285,10 @@ img {
         max-width: 90%;
     }
 
+    .title__t {
+        font-size: 80px;
+    }
+
     .about__top {
         flex-wrap: wrap;
         padding: 260px 0 0 100px;
@@ -1337,7 +1342,6 @@ img {
     }
 
     .about__block-title {
-        font-size: 80px;
         padding-top: 10px;
         margin-bottom: 35px;
     }
@@ -1360,8 +1364,8 @@ img {
 
 
 @media (max-width:1500px) {
-    .header__title-two {
-        font-size: 80px;
+    .title__t {
+        font-size: 70px;
     }
 
     .about__content-one,
@@ -1370,7 +1374,6 @@ img {
     }
 
     .about__block-title {
-        font-size: 60px;
         padding-top: 10px;
         margin-bottom: 20px;
     }
@@ -1384,13 +1387,13 @@ img {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        padding-top: 175px;
+        margin-bottom: 10px;
     }
 
-    .possibilities__graphic {
-        bottom: auto;
+    .advantages {
+        margin-top: ;
     }
-
-    .advantages {}
 
     .events__events {
         flex-wrap: wrap;
@@ -1420,8 +1423,8 @@ img {
         align-self: center;
     }
 
-    .header__title-two {
-        font-size: 70px;
+    .title__t {
+        font-size: 60px;
     }
 
     .container {
@@ -1484,7 +1487,12 @@ img {
 
     .container {
         max-width: 100%;
-        padding: 0 15px 0;
+        padding: 0 10px 0;
+    }
+
+    .title__t {
+        font-size: 50px;
+        letter-spacing: 6px;
     }
 
     .about__top {
@@ -1512,7 +1520,6 @@ img {
     }
 
     .about__block-title {
-        font-size: 50px;
         padding-top: 5px;
         margin-bottom: 10px;
     }
@@ -1558,11 +1565,6 @@ img {
         letter-spacing: 3px;
     }
 
-    .header__title-two {
-        font-size: 60px;
-        letter-spacing: 7px;
-    }
-
     .about__content {
         display: flex;
         flex-direction: row;
@@ -1591,9 +1593,9 @@ img {
         margin-bottom: 300px;
     }
 
-    .header__title-two {
-        font-size: 50px;
-        letter-spacing: 4px;
+    .title__t {
+        font-size: 48px;
+        letter-spacing: 5px;
     }
 
     .header__adress {
@@ -1632,7 +1634,7 @@ img {
         padding: 25px 0px 45px;
     }
 
-    .header__title-two {
+    .title__t {
         font-size: 42px;
         letter-spacing: 4px;
     }
@@ -1643,11 +1645,6 @@ img {
 
     .about__content-block {
         max-width: 206px;
-    }
-
-    .about__block-title {
-        font-size: 42px;
-        letter-spacing: 4px;
     }
 
     .about__block-text {
@@ -1686,15 +1683,7 @@ img {
 }
 
 
-
-
-
 @media (max-width:340px) {
-    .header__title-two {
-        font-size: 39px;
-        letter-spacing: 4px;
-    }
-
     .about__top {
         padding: 100px 0 0 15px;
     }
