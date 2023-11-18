@@ -411,7 +411,7 @@ img {
 
 .about__gallery-photo-one,
 .about__gallery-photo-two {
-    max-width: 90%;
+    max-width: 92%;
     height: auto;
     object-fit: cover;
 }
@@ -1280,6 +1280,10 @@ img {
 
 
 @media (max-width:1800px) {
+    .container {
+        max-width: 90%;
+    }
+
     .about__top {
         flex-wrap: wrap;
         padding: 260px 0 0 100px;
@@ -1295,8 +1299,8 @@ img {
         margin-bottom: 90px;
     }
 
-    .container {
-        max-width: 90%;
+    .about__about {
+        padding-left: 100px;
     }
 
     .about__content {
@@ -1321,7 +1325,6 @@ img {
         gap: 10px;
     }
 
-
     .about__block-info {
         width: 100%;
         height: auto;
@@ -1344,11 +1347,11 @@ img {
     }
 
     .about__graphic {
-        transform: translateY(30%);
+        transform: translateY(45%);
     }
 
     .possibilities {
-        margin-top: 5%;
+        margin-top: 10%;
     }
 }
 
@@ -1439,12 +1442,31 @@ img {
         font-size: 20px;
         letter-spacing: 4px;
     }
+
+    .about__about {
+        padding-left: 40px;
+    }
+
 }
+
+
+
+
+@media (max-width:1100px) {
+    .possibilities {
+        margin-top: 5%;
+    }
+}
+
 
 
 @media (max-width:980px) {
     .header__title-two {
         font-size: 65px;
+    }
+
+    .possibilities {
+        margin-top: 3%;
     }
 }
 
@@ -1499,8 +1521,11 @@ img {
         font-size: 16px;
         max-width: 300px;
     }
-}
 
+    .about__about {
+        padding-left: 15px;
+    }
+}
 
 @media (max-width:900px) {
     .header__top-link-large {
@@ -1513,7 +1538,6 @@ img {
         display: none;
     }
 }
-
 
 @media (max-width:860px) {
     .header__graphic {
@@ -1544,6 +1568,10 @@ img {
         flex-direction: row;
         align-items: center;
         margin-bottom: 20px;
+    }
+
+    .possibilities {
+        margin-top: 1%;
     }
 }
 
@@ -1589,6 +1617,14 @@ img {
     .about__top-info {
         gap: 40px;
     }
+
+    .about__gallery-photo {
+        gap: 10px;
+    }
+
+    .possibilities {
+        margin-top: -5%;
+    }
 }
 
 @media (max-width:550px) {
@@ -1617,6 +1653,10 @@ img {
     .about__block-text {
         font-size: 12px;
     }
+
+    .possibilities {
+        margin-top: -10%;
+    }
 }
 
 @media (max-width:450px) {
@@ -1627,7 +1667,27 @@ img {
     .about__text {
         padding-right: 20px;
     }
+
+    .possibilities {
+        margin-top: -16%;
+    }
 }
+
+@media (max-width:400px) {
+    .possibilities {
+        margin-top: -20%;
+    }
+}
+
+@media (max-width:380px) {
+    .possibilities {
+        margin-top: -22%;
+    }
+}
+
+
+
+
 
 @media (max-width:340px) {
     .header__title-two {
@@ -1648,5 +1708,9 @@ img {
         padding: 13px 17px 11px;
         font-size: 16px;
         letter-spacing: 3px;
+    }
+
+    .possibilities {
+        margin-top: -28%;
     }
 }
