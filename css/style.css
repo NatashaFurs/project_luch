@@ -37,6 +37,8 @@ html {
 html,
 body {
     height: 100%;
+    max-width: 100%;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -68,6 +70,7 @@ img {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    border: 1px solid green;
 }
 
 .container {
@@ -446,7 +449,6 @@ img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    padding-right: 23px;
 }
 
 
@@ -532,7 +534,6 @@ img {
     visibility: hidden;
 }
 
-
 .about__graphic {
     max-width: 30%;
     height: auto;
@@ -546,8 +547,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-
 
 
 
@@ -575,20 +574,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-/* 
-.possibilities::after {
-    content: '';
-    background-image: url(../images/graphic-3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40%;
-    height: 51%;
-    position: absolute;
-    transform: translateX(-170px);
-    bottom: 60px;
-    z-index: -4;
-} */
 
 .possibilities__inner {
     display: flex;
@@ -648,7 +633,6 @@ img {
 .possible__img {
     width: 100%;
     object-fit: cover;
-
 }
 
 .advantages {
@@ -661,6 +645,7 @@ img {
 
 .advantages__inner {
     padding: 20px 0 342px;
+    position: relative;
 }
 
 .advantages__booking {
@@ -732,12 +717,9 @@ img {
     align-items: center;
     border-top: none;
     border-bottom: none; */
-
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-
     justify-content: center;
-
 }
 
 .advantages__block {
@@ -776,8 +758,8 @@ img {
 
 .advantages__img {
     width: 100%;
-
 }
+
 
 
 .gallery {
@@ -785,25 +767,30 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 1308px;
-    margin-top: -205px;
+    padding: 253px 0 380px;
+    margin-top: -212px;
     position: relative;
 }
 
-.gallery::before {
-    content: "";
-    background-image: url(../images/graphic-4.png);
-    background-repeat: no-repeat;
-    width: 297px;
-    height: 621px;
+.gallery__graphic {
+    max-width: 40%;
+    height: auto;
     position: absolute;
+    top: -10%;
     right: 0px;
-    top: -140px;
+    right: -21%;
+    overflow-x: hidden;
     z-index: -2;
 }
 
+.graphic__four {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
 .gallery__title {
-    padding-top: 225px;
     margin-bottom: 88px;
     font-size: 96px;
     line-height: normal;
@@ -811,15 +798,31 @@ img {
     text-transform: uppercase;
 }
 
+.gallery__gallery {
+    max-width: 100%;
+    padding-left: 24px;
+}
+
 .gallery__photos {
     display: flex;
-    max-width: 1900px;
-    height: 430px;
+    max-width: 100%;
+    height: auto;
     overflow: hidden;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
-    margin-left: 24px;
+}
+
+.gallery__gallery-photo {
+    max-width: 92%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery__two,
+.gallery__four,
+.gallery__five {
+    max-width: 27%;
 }
 
 .gallery-arrows {
@@ -845,23 +848,24 @@ img {
 }
 
 .events__events {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 22px;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
     margin-bottom: 65px;
 }
 
 .event__one,
 .event__two {
     display: flex;
-    width: 755px;
-    height: 252px;
-    padding: 52px 37px 49px 2px;
+    padding: 52px 20px 49px 2px;
     border-top: 2px solid #0069E4;
     border-bottom: 2px solid #0069E4;
 }
-
 
 .events__arrows {
     display: flex;
@@ -1087,21 +1091,6 @@ img {
     left: -93px;
 }
 
-/* 
-.connect::before {
-    content: '';
-    background-image: url(../images/graphic-7.png);
-    opacity: 0.8;
-    background-repeat: no-repeat;
-    width: 421px;
-    height: 445px;
-    position: absolute;
-    top: -400px;
-    margin-left: -93px;
-   left: 0px;
-}
-*/
-
 .connect::after {
     content: '';
     background-image: url(../images/graphic-8.png);
@@ -1126,6 +1115,7 @@ img {
     text-align: center;
     margin-bottom: 60px;
 }
+
 
 
 .footer {
@@ -1378,10 +1368,27 @@ img {
     .possibilities {
         margin-top: 10%;
     }
+
+    .event__month {
+        font-size: 30px;
+    }
+
+    .event__text,
+    .review__text-one,
+    .review__text-two {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+
 }
 
 
-@media (max-width:1660px) {}
+@media (max-width:1660px) {
+    .gallery__graphic {
+        top: -8%;
+    }
+}
 
 
 @media (max-width:1500px) {
@@ -1434,9 +1441,28 @@ img {
         gap: 80px;
     }
 
+    .gallery {
+        padding-bottom: 340px;
+        margin-top: -198px;
+    }
 
-    .events__events {
-        flex-wrap: wrap;
+    .gallery__graphic {
+        top: -6%;
+    }
+
+    .gallery__title {
+        margin-bottom: 70px;
+    }
+
+    .event__month {
+        font-size: 26px;
+    }
+
+    .event__text,
+    .review__text-one,
+    .review__text-two {
+        font-size: 20px;
+        line-height: normal;
     }
 }
 
@@ -1545,10 +1571,39 @@ img {
     .advantages__img {
         width: 65%;
     }
+
+    .gallery {
+        margin-top: -192px;
+    }
+
+    .gallery__graphic {
+        top: -3%;
+    }
+
+    .gallery__title {
+        margin-bottom: 60px;
+    }
+
+    .gallery-arrows {
+        margin: 40px auto;
+    }
+
+    .event__month {
+        font-size: 24px;
+    }
+
+    .event__text,
+    .review__text-one,
+    .review__text-two {
+        font-size: 19px;
+        line-height: normal;
+    }
+
+    .event__line-line {
+        padding-left: 20px;
+        padding-right: 30px;
+    }
 }
-
-
-
 
 @media (max-width:1100px) {
     .possibilities {
@@ -1567,6 +1622,39 @@ img {
         font-size: 20px;
         line-height: normal;
         letter-spacing: 3px;
+    }
+
+    .gallery {
+        padding-bottom: 300px;
+    }
+
+    .gallery__graphic {
+        top: 1%;
+        right: -23%;
+    }
+
+    .events__inner {
+        margin-top: -140px;
+    }
+
+    .events__title {
+        margin-bottom: 70px;
+    }
+
+    .event__month {
+        font-size: 20px;
+    }
+
+    .event__text,
+    .review__text-one,
+    .review__text-two {
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    .event__line-line {
+        padding-left: 10px;
+        padding-right: 20px;
     }
 }
 
@@ -1670,6 +1758,14 @@ img {
     .advantages__block {
         height: 170px;
     }
+
+    .gallery__graphic {
+        top: 3%;
+    }
+
+    .gallery__gallery {
+        padding-left: 10px;
+    }
 }
 
 @media (max-width:900px) {
@@ -1734,6 +1830,19 @@ img {
 
     .advantages__img {
         width: 45%;
+    }
+
+    .gallery {
+        padding-bottom: 270px;
+        margin-top: -182px;
+    }
+
+    .gallery__title {
+        margin-bottom: 50px;
+    }
+
+    .events__events {
+        grid-template-columns: auto;
     }
 }
 
@@ -1820,6 +1929,52 @@ img {
     .advantages__block {
         height: 140px;
     }
+
+    .gallery {
+        padding: 245px 0 245px;
+        margin-top: -159px;
+    }
+
+    .gallery__title {
+        margin-bottom: 43px;
+    }
+
+    .gallery__photos {
+        gap: 10px;
+    }
+
+    .gallery-arrows {
+        margin: 35px auto;
+    }
+
+
+    .events__inner {
+        margin-top: -100px;
+    }
+
+    .events__title {
+        margin-bottom: 50px;
+    }
+
+    .events__events {
+        margin-bottom: 40px;
+    }
+
+    .event__one,
+    .event__two {
+        padding: 25px 2px 27px 2px;
+    }
+
+    .event__month {
+        font-size: 18px;
+    }
+
+    .event__text,
+    .review__text-one,
+    .review__text-two {
+        font-size: 16px;
+        line-height: normal;
+    }
 }
 
 @media (max-width:550px) {
@@ -1884,6 +2039,24 @@ img {
     .advantages__img {
         width: 52%;
     }
+
+    .gallery__graphic {
+        top: 6%;
+        right: -25%;
+    }
+
+    .events__inner {
+        margin-top: -90px;
+    }
+
+    .events__title {
+        margin-bottom: 38px;
+    }
+
+    .events__events {
+        margin-bottom: 38px;
+        gap: 10px;
+    }
 }
 
 @media (max-width:450px) {
@@ -1906,6 +2079,10 @@ img {
 
     .advantages__img {
         width: 66%;
+    }
+
+    .gallery__graphic {
+        top: 8%;
     }
 }
 
@@ -1934,6 +2111,10 @@ img {
         width: 75%;
     }
 
+    .gallery__graphic {
+        top: 9%;
+    }
+
 }
 
 @media (max-width:380px) {
@@ -1947,6 +2128,15 @@ img {
 
     .advantages__img {
         width: 75%;
+    }
+
+    .events__inner {
+        margin-top: -65px;
+    }
+
+    .event__line-line {
+        padding-left: 0px;
+        padding-right: 4px;
     }
 }
 
@@ -1981,5 +2171,10 @@ img {
 
     .advantages__img {
         width: 93%;
+    }
+
+    .gallery__graphic {
+        top: 10%;
+        right: -29%;
     }
 }
