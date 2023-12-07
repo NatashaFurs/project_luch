@@ -903,22 +903,26 @@ img {
 
 
 
+
+
 .reviews {
     background-image: url(../images/reviews-fone.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    height: auto;
-    margin-top: -80px;
+    width: 100%;
     position: relative;
+    padding: 452px 0 350px 168px;
+    margin-top: -80px;
+    margin-bottom: auto;
 }
 
-.reviews__graphic {
-    max-width: 25%;
+.reviews__graphic-five {
+    max-width: 51%;
     height: auto;
     position: absolute;
     right: -7%;
-    transform: translateY(44%);
+    transform: translateY(-77%);
 }
 
 .graphic__five {
@@ -928,35 +932,41 @@ img {
 }
 
 .reviews__inner {
-    padding: 450px 0 0 196px;
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
+
 .reviews__title {
-    /* width: 550px; */
     font-size: 96px;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
 
-.reviews__block {
-    position: relative;
+.reviews__block-one {
+    width: 30%;
 }
 
-.reviews__reviews {
-    max-width: 935px;
-    height: 351px;
+.reviews__block-two {
+    width: 55%;
+}
+
+.reviews__content {
     display: flex;
     gap: 20px;
     overflow: hidden;
     margin-bottom: 80px;
 }
 
-.review__review {
-    display: block;
-    min-width: 600px;
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 65%;
     height: 351px;
     background: #fff;
 }
@@ -965,7 +975,15 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 49px;
-    padding: 44px 42px 0 34px;
+    padding: 44px 48px 0 34px;
+}
+
+.review__img {
+    width: 12%;
+}
+
+.review__img-top {
+    width: 100%;
 }
 
 .review__title {
@@ -983,14 +1001,19 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    padding: 0 42px 48px 47px;
+    padding: 0px 42px 0px 47px;
 }
 
-.review__graphic {
+.review-arrows {
+    padding-right: 10px;
+}
+
+.reviews__graphic-six {
     max-width: 40%;
     height: auto;
     position: absolute;
-    z-index: 5;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .graphic__six {
@@ -1005,18 +1028,18 @@ img {
     background-image: url(../images/contacts-fone.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 676px;
-    margin-top: -260px;
+    background-position: top center;
+    width: 100%;
+    margin-top: -17%;
     position: relative;
 }
 
 .contacts__inner {
-    padding: 327px 0 196px 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 370px;
+    padding: 327px 0 255px 0;
+    /* gap: 370px; */
 }
 
 .contacts__title {
@@ -1032,23 +1055,22 @@ img {
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #fff;
-    display: grid;
-    gap: 18px 0px;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 50%;
 }
 
-.contacts__address {
-    grid-column: 1/3;
+.contacts__links {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
 }
 
-.contacts__phone {
-    border-right: 1px solid #fff;
-    padding-right: 40px;
-}
-
-.contacts__mail {
-    padding-left: 40px;
+.contacts__line {
+    border-left: 2px solid #fff;
+    height: 25px;
 }
 
 .contacts__rectangle {
@@ -1058,21 +1080,19 @@ img {
 }
 
 .map {
-    /* background:
-        linear-gradient(0deg, rgba(0, 178, 255, 0.20) 0%, rgba(0, 178, 255, 0.20) 100%),
-        url(../images/map1.png), lightgray 50%; */
-    /* mix-blend-mode: multiply; */
     background: url(../images/map1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     height: 525px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -212px;
+    margin-top: -11%;
 }
+
+
 
 .connect {
     display: flex;
@@ -1379,7 +1399,9 @@ img {
         margin-top: 10%;
     }
 
-    .event__month {
+    .event__month,
+    .review__title,
+    .contacts__contacts {
         font-size: 30px;
     }
 
@@ -1389,12 +1411,20 @@ img {
         font-size: 22px;
         line-height: normal;
     }
+
+    .reviews {
+        padding: 400px 0 300px 6%;
+    }
 }
 
 
 @media (max-width:1660px) {
     .gallery__graphic {
         top: -8%;
+    }
+
+    .review {
+        height: 300px;
     }
 }
 
@@ -1462,7 +1492,8 @@ img {
         margin-bottom: 70px;
     }
 
-    .event__month {
+    .event__month,
+    .review__title {
         font-size: 26px;
     }
 
@@ -1471,6 +1502,26 @@ img {
     .review__text-two {
         font-size: 20px;
         line-height: normal;
+    }
+
+    .reviews {
+        padding: 330px 0 200px 4%;
+    }
+
+    .reviews__graphic-five {
+        right: -13%;
+    }
+
+    .contacts {
+        margin-top: -14%;
+    }
+
+    .contacts__inner {
+        padding: 300px 0 200px 0;
+    }
+
+    .contacts__contacts {
+        width: 65%;
     }
 }
 
@@ -1594,7 +1645,9 @@ img {
         margin: 40px auto;
     }
 
-    .event__month {
+    .event__month,
+    .review__title,
+    .contacts__contacts {
         font-size: 24px;
     }
 
@@ -1608,6 +1661,27 @@ img {
     .event__line-line {
         padding-left: 20px;
         padding-right: 30px;
+    }
+
+    .reviews {
+        margin-top: 0px;
+    }
+
+    .reviews__content {
+        margin-bottom: 60px;
+    }
+
+    .review__top {
+        margin-bottom: 30px;
+    }
+
+
+    .reviews__graphic-five {
+        right: -18%;
+    }
+
+    .contacts__inner {
+        padding: 250px 0 150px 0;
     }
 }
 
@@ -1647,7 +1721,9 @@ img {
         margin-bottom: 70px;
     }
 
-    .event__month {
+    .event__month,
+    .review__title,
+    .contacts__contacts {
         font-size: 20px;
     }
 
@@ -1662,6 +1738,30 @@ img {
         padding-left: 10px;
         padding-right: 20px;
     }
+
+    .reviews__block-one {
+        width: 22%;
+    }
+
+    .reviews__block-two {
+        width: 70%;
+    }
+
+    .reviews__graphic-six {
+        display: none;
+    }
+
+    .contacts__inner {
+        padding: 200px 0 130px 0;
+    }
+
+    .contacts__links {
+        height: 30px;
+    }
+
+    .contacts__line {
+        height: 20px;
+    }
 }
 
 
@@ -1670,8 +1770,20 @@ img {
     .header__title-two {
         font-size: 65px;
     }
-}
 
+    .reviews {
+        padding: 250px 0 180px 4%;
+    }
+
+    .reviews__graphic-five {
+        right: -26%;
+        transform: translateY(-73%);
+    }
+
+    .contacts {
+        margin-top: -18%;
+    }
+}
 
 @media (max-width:900px) {
     .header__top {
@@ -1772,6 +1884,22 @@ img {
     .gallery__gallery {
         padding-left: 10px;
     }
+
+    .reviews {
+        padding: 200px 0 160px 10px;
+    }
+
+    .reviews__graphic-five {
+        transform: translateY(-60%);
+    }
+
+    .contacts {
+        margin-top: -20%;
+    }
+
+    .contacts__inner {
+        padding: 170px 0 130px 0;
+    }
 }
 
 @media (max-width:900px) {
@@ -1849,6 +1977,59 @@ img {
 
     .events__events {
         grid-template-columns: auto;
+    }
+
+    .reviews__inner {
+        flex-direction: column;
+        gap: 43px;
+    }
+
+    .reviews__block-one {
+        width: 100%;
+    }
+
+    .reviews__block-two {
+        width: 100%;
+    }
+
+    .reviews__content {
+        margin-bottom: 50px;
+    }
+
+    .review {
+        height: 250px;
+    }
+
+    .review-arrows {
+        padding-right: 10px;
+    }
+
+    .contacts {
+        margin-top: -25%;
+    }
+
+    .contacts__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .contacts__contacts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contacts__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts__line {
+        border-left: none;
+        border-bottom: 2px solid #fff;
+        width: 30px;
     }
 }
 
@@ -1938,7 +2119,7 @@ img {
 
     .gallery {
         padding: 245px 0 245px;
-        margin-top: -159px;
+        margin-top: -128px;
     }
 
     .gallery__title {
@@ -1952,7 +2133,6 @@ img {
     .gallery-arrows {
         margin: 35px auto;
     }
-
 
     .events__inner {
         margin-top: -100px;
@@ -1971,8 +2151,11 @@ img {
         padding: 25px 2px 27px 2px;
     }
 
-    .event__month {
+    .event__month,
+    .review__title,
+    .contacts__contacts {
         font-size: 18px;
+        letter-spacing: 2px;
     }
 
     .event__text,
@@ -1980,6 +2163,31 @@ img {
     .review__text-two {
         font-size: 16px;
         line-height: normal;
+    }
+
+    .reviews {
+        padding: 160px 0 160px 10px;
+    }
+
+    .review {
+        height: 200px;
+    }
+
+    .review__top {
+        padding: 30px 30px 0 28px;
+    }
+
+    .review__text-one,
+    .review__text-two {
+        padding: 0px 32px 0px 30px;
+    }
+
+    .contacts {
+        margin-top: -35%;
+    }
+
+    .contacts__inner {
+        padding: 170px 0 100px 0;
     }
 }
 
@@ -2063,6 +2271,10 @@ img {
         margin-bottom: 38px;
         gap: 10px;
     }
+
+    .review {
+        min-width: 80%;
+    }
 }
 
 @media (max-width:450px) {
@@ -2089,6 +2301,27 @@ img {
 
     .gallery__graphic {
         top: 8%;
+    }
+
+    .reviews__graphic-five {
+        transform: translateY(-74%);
+    }
+
+    .reviews__content {
+        gap: 13px;
+        margin-bottom: 40px;
+    }
+
+    .review {
+        min-width: 93%;
+    }
+
+    .review__top {
+        padding: 19px 23px 0 23px;
+    }
+
+    .contacts {
+        margin-top: -45%;
     }
 }
 
@@ -2144,6 +2377,14 @@ img {
         padding-left: 0px;
         padding-right: 4px;
     }
+
+    .reviews__graphic-five {
+        transform: translateY(-85%);
+    }
+
+    .contacts {
+        margin-top: -55%;
+    }
 }
 
 
@@ -2180,7 +2421,11 @@ img {
     }
 
     .gallery__graphic {
-        top: 10%;
-        right: -29%;
+        top: 8%;
+        right: -25%;
+    }
+
+    .contacts {
+        margin-top: -60%;
     }
 }
