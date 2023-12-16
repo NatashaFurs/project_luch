@@ -197,7 +197,7 @@ img {
 
 #menu__burger:checked~.menu__page {
     display: block;
-    /* position: fixed; */
+    position: fixed;
 }
 
 #menu__burger-page:checked~.menu__page {
