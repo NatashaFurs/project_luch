@@ -197,7 +197,7 @@ img {
 
 #menu__burger:checked~.menu__page {
     display: block;
-    position: fixed;
+    /* position: fixed; */
 }
 
 #menu__burger-page:checked~.menu__page {
@@ -217,7 +217,7 @@ img {
     top: 0;
     background-attachment: fixed;
     z-index: 1;
-    padding-top: 28px;
+    padding: 28px 20px 80px;
     transition-duration: .5s;
 }
 
@@ -225,6 +225,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 90px;
@@ -233,15 +234,11 @@ img {
 .menu__top-link,
 .menu__phone {
     display: flex;
-    width: 299px;
+    max-width: 299px;
 }
 
 .menu__top-link {
     justify-content: flex-end;
-}
-
-.menu__phone {
-    padding-left: 54px;
 }
 
 .menu__list {
@@ -264,20 +261,22 @@ img {
 
 .menu__contacts {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: auto auto;
     justify-content: center;
+    align-items: center;
     font-family: 'IBM Plex Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    letter-spacing: 2px;
+    line-height: normal;
     text-transform: none;
-    margin-bottom: 90px;
 }
 
 .menu__social {
     display: flex;
     flex-direction: column;
+    width: 350px;
 }
 
 .menu__social+.menu__social {
@@ -2160,9 +2159,42 @@ img {
         letter-spacing: 2px;
     }
 
+    .menu__page {
+        padding: 20px 10px 30px;
+    }
+
+    .menu__top {
+        margin-bottom: 45px;
+    }
+
     .menu__btn {
         width: 40px;
         height: 40px;
+    }
+
+    .menu__list {
+        margin-bottom: 60px;
+    }
+
+    .menu__link {
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+
+    .menu__contacts {
+        font-size: 10px;
+    }
+
+    .menu__social {
+        width: 210px;
+    }
+
+    .social__one {
+        padding-right: 25px;
+    }
+
+    .social__two {
+        padding-left: 25px;
     }
 
     .logo__img,
@@ -2329,12 +2361,38 @@ img {
     .connect__text {
         margin-bottom: 43px;
     }
+
+
 }
 
 @media (max-width:550px) {
     .header__inner {
         padding: 25px 0px 45px;
     }
+
+    .menu__top {
+        font-size: 12px;
+        letter-spacing: 3px;
+        line-height: normal;
+        gap: 10px;
+    }
+
+    .menu__contacts {
+        font-size: 8px;
+    }
+
+    .menu__social {
+        max-width: 150px;
+    }
+
+    .social__one {
+        padding-right: 15px;
+    }
+
+    .social__two {
+        padding-left: 15px;
+    }
+
 
     .title__t {
         font-size: 42px;
