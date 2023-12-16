@@ -234,11 +234,11 @@ img {
 .menu__top-link,
 .menu__phone {
     display: flex;
-    max-width: 299px;
+    width: 40%;
 }
 
-.menu__top-link {
-    justify-content: flex-end;
+.menu__phone {
+    justify-content: end;
 }
 
 .menu__list {
