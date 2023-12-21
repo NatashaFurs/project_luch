@@ -11,41 +11,43 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
 
-        <body class="form">
 
-            <div class="form__container">
+    <body class="form">
+
+        <div class="form__container">
+            <div class="ico">
                 <img class="ico__close" src="images/ico-close.svg" alt="ico-close">
-                <div class="form__inner">
-                    <h3 class="form__title">Связаться с нами</h3>
-
-                    <form class="form__form" action="">
-                        <div class="form__box">
-                            <div class="form__group">
-                                <label class="form__label" for="name"></label>
-                                <input class="form__input" type="text" id="name" placeholder="Имя">
-                            </div>
-                            <div class="form__group">
-                                <label class="form__label" for="email"></label>
-                                <input class="form__input" type="email" id="email" placeholder="E-mail">
-                            </div>
-                        </div>
-
-                        <div class="form__group">
-                            <textarea class="form__area" name="message" id="formarea" cols="30" rows="1"
-                                placeholder="Сообщение"></textarea>
-                        </div>
-                    </form>
-
-                    <p class="form__text">
-                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
-                        политикой конфиденциальности.
-                    </p>
-                    <button class="form__button">Отправить</button>
-                </div>
             </div>
+            <div class="form__inner">
+                <h3 class="form__title">Связаться с нами</h3>
 
-        </body>
+                <form class="form__form" action="">
+                    <div class="form__box">
+                        <div class="form__group group__one">
+                            <label class="form__label" for="name"></label>
+                            <input class="form__input" type="text" id="name" placeholder="Имя">
+                        </div>
+                        <div class="form__group group__two">
+                            <label class="form__label" for="email"></label>
+                            <input class="form__input" type="email" id="email" placeholder="E-mail">
+                        </div>
+                    </div>
+
+                    <div class="form__group group__three">
+                        <textarea class="form__area" name="message" id="formarea" cols="30" rows="1"
+                            placeholder="Сообщение"></textarea>
+                    </div>
+                </form>
+
+                <p class="form__text">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                    политикой конфиденциальности.
+                </p>
+                <button class="form__button">Отправить</button>
+            </div>
+        </div>
+
+    </body>
 
 </html>
